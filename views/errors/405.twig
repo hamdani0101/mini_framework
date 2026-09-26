@@ -1,0 +1,6 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}405 — Method not allowed{% endblock %}
+{% block content %}
+<h1>405 — Method not allowed</h1>
+<p>The method is not allowed for <code>{{ path|default('') }}</code>.</p>
+{% endblock %}

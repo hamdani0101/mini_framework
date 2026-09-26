@@ -1,0 +1,6 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}404 — Not found{% endblock %}
+{% block content %}
+<h1>404 — Page not found</h1>
+<p>No route matched <code>{{ path|default('') }}</code>.</p>
+{% endblock %}

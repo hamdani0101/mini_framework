@@ -16,7 +16,7 @@ class EmptyResponse extends Response
      * Create an empty response with the given status code.
      *
      * @param int $status Status code for the response, if any.
-     * @param array $headers Headers for the response, if any.
+     * @param array<non-empty-string, string|string[]> $headers Headers for the response, if any.
      */
     public function __construct(int $status = 204, array $headers = [])
     {
@@ -27,10 +27,9 @@ class EmptyResponse extends Response
     /**
      * Create an empty response with the given headers.
      *
-     * @param array $headers Headers for the response.
-     * @return EmptyResponse
+     * @param array<non-empty-string, string[]> $headers Headers for the response.
      */
-    public static function withHeaders(array $headers) : EmptyResponse
+    public static function withHeaders(array $headers): EmptyResponse
     {
         return new static(204, $headers);
     }

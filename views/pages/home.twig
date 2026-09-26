@@ -1,0 +1,9 @@
+{% extends 'layouts/app.twig' %}
+
+{% block title %}{{ appName }} — Home{% endblock %}
+
+{% block content %}
+<h1>Welcome to {{ appName }}</h1>
+<p>Environment: {{ env }}</p>
+<p>If you see this page, routing + Twig rendering work.</p>
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}500 — Server error{% endblock %}
+{% block content %}
+<h1>500 — Something went wrong</h1>
+<p>{{ message|default('Something went wrong.') }}</p>
+{% endblock %}
